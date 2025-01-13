@@ -1,0 +1,70 @@
+.itemImage {
+    width: 30%;
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        margin: 10%;
+        padding: auto;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+    }
+    .itemImage {
+        align-self: center;
+        width: 80%;
+    }
+    .innercontainer {
+        gap: 1rem;
+    }
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px;
+    border: solid;
+    border-color: gray;
+    border-radius: 15px;
+}
+
+.innercontainer {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.itemHeading {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.itemDescription {
+    font-size: 1.5rem;
+}
+
+.itemPrice {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.addButton {
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15%;
+    width: 50%;
+    height: 40px;
+    border-color: aliceblue;
+}
